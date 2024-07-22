@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-driven Personalized Health Assistant</title>
+    <link rel="stylesheet" href={{url_for('static', filename='style3.css')}}>
+<body>
+    <header>
+        <h1>AI-driven Personalized Health Assistant</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Welcome!</h2>
+            <p>Your personalized health assistant is here to provide you with tailored health advice and precautions to help you stay healthy and fit.</p>
+        </div>
+        <div class="section">
+            <h2>Check Your Condition</h2>
+            <form id="health-form">
+                <div class="form-group">
+                    <label for="symptoms">Describe your symptoms:</label>
+                    <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+                </div>
+                <button type="button" class="btn" onclick="getHealthAdvice()">Get Advice</button>
+            </form>
+        </div>
+        <div class="section">
+            <h2>Health Advice</h2>
+            <div id="advice-output">
+                <p>Please enter your symptoms to get health advice.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 AI-driven Personalized Health Assistant
+    </footer>
+    <link rel="stylesheet" href={{url_for('static', filename='script3.js')}}>
+
+    <script src="script3.js"></script>
+</body>
+</html>

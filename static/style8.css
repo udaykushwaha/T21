@@ -1,0 +1,73 @@
+body{
+    margin-top:0px;
+    padding:0px;
+}
+#head01{
+    display:flex;
+}
+header div h1{
+
+margin-top:0.6rem;
+color:white;
+margin-left: 0.rem;
+}
+header {
+    display: flex;
+    background-color:rgb(113, 64, 20);
+    justify-content: space-between;
+}
+#head02,#head03{
+    margin-top: 1.3rem;
+    margin-right: 1rem;
+}
+#head02 a,#head03 a{
+    text-decoration:none ;
+    color:white;
+}
+#head03 a{
+    text-decoration:none ;
+    color:white;
+    border:solid 2px rgb(13, 1, 1) ;
+    padding:6px ;
+    border-radius: 6px 6px 6px;
+
+}
+#head02 a:hover{
+    color: rgb(224, 21, 224);
+    transition: 1s;
+}
+#head03 a:hover{
+    color: rgb(128, 0, 41);
+    transition: 1s;
+}
+#head01 h1:hover{
+    color: rgb(224, 21, 224);
+    transition: 1s;
+}
+
+#head02 a{
+    margin-right: 2rem;
+}
+
+.images{
+    border: solid 2px black;
+    border-radius: 6px 6px 6px;
+}
+
+section{
+    display: grid;
+    gap:5px;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+footer{
+    background-color:black ;
+    height :150px;
+    color:white ;
+}
+#foot01 ul{
+    list-style: none;
+    
+}

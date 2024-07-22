@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-driven Personalized Health Assistant</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+
+<body>
+    <header>
+        <h1>AI-driven Personalized Health Assistant</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Welcome!</h2>
+            <p>Your personalized health assistant is here to provide you with best  health advice and precautions to
+                help you stay healthy and fit.</p>
+        </div>
+
+        <div class="section">
+            <h2>Real-time Calorie Counting</h2>
+            <input type="file" id="imageInput" accept="image/*">
+            <button type="button" class="btn" onclick="analyzeImage()">Analyze Image</button>
+            <div id="calorieOutput">
+                <p>Upload an image of your meal to get calorie information.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Integration with Wearable Health Tech</h2>
+            <input type="file" id="wearableFileInput" accept=".json,.csv">
+            <button type="button" class="btn" onclick="processWearableFile()">Process File</button>
+            <div id="wearableData">Upload a file from your wearable device to get real-time health insights.</div>
+        </div>
+
+        <div class="section">
+            <h2>Health Data Analysis</h2>
+            <form id="health-data-form">
+                <div class="form-group">
+                    <label for="healthData">Enter your health data:</label>
+                    <textarea id="healthData" name="healthData" rows="4" required></textarea>
+                </div>
+                <button type="button" class="btn" onclick="analyzeHealthData()">Get Feedback</button>
+            </form>
+            <div id="healthDataOutput">
+                <p>Enter your health data to get personalized feedback.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Interact with Healthcare Providers</h2>
+            <form id="provider-form">
+                <div class="form-group">
+                    <label for="message">Send a message to your healthcare provider:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.txt">
+                <button type="button" class="btn" onclick="sendMessageToProvider()">Send Message</button>
+            </form>
+            <div id="providerOutput">
+                <p>Send a message or upload a file to your healthcare provider for assistance.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Support for Seniors and Chronic Conditions</h2>
+            <p>We provide specialized support and guidance for seniors and individuals with chronic health conditions to
+                help manage and improve their health.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 AI-driven Personalized Health Assistant
+    </footer>
+    <script src="script5.js"></script>
+</body>
+
+</html>
